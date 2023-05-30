@@ -5,7 +5,7 @@
    [honey.sql.helpers :as h]
    [shorturl.env :refer [env]]))
 
-(def mysql-db {:dbtype (env :DBTYPE)
+(def mysql-db {:dbtype "mysql"
                :host (env :HOST)
                :dbname (env :DBNAME)
                :user (env :USER)
